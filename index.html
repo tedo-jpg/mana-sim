@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -249,6 +250,38 @@ footer{
 
 <body>
 
+<!-- MÚSICA -->
+
+<audio autoplay loop id="bg-music">
+  <source src="sou-de-nana.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+window.addEventListener('load', () => {
+
+  const music = document.getElementById('bg-music');
+
+  music.volume = 0.4;
+
+  const playPromise = music.play();
+
+  if (playPromise !== undefined) {
+
+    playPromise.catch(() => {
+
+      document.addEventListener('click', () => {
+        music.play();
+      }, { once: true });
+
+    });
+
+  }
+
+});
+
+</script>
+
 <!-- CORAÇÕES -->
 
 <div class="hearts">
@@ -282,16 +315,20 @@ footer{
       Entre todas as coincidências da vida, você foi a mais bonita.
       Seu sorriso acalma meu caos, seus olhos castanhos claros brilham
       como estrelas douradas no meio da noite, e cada momento ao seu lado
-      transforma o mundo em um lugar melhor. 
+      transforma o mundo em um lugar melhor.
       Eu te amo mais que tudo, bom dia flor do meio dia.
     </p>
 
-    <a 
+    <a
     href="https://wa.me/5591981093467?text=Obrigada%20meu%20amor%20eu%20amei!!!"
     target="_blank"
     class="btn">
       💌 Falar com meu amor
     </a>
+
+    <p style="margin-top:20px; color:#d9b3ff; font-size:18px;">
+      🎵 Abra com som para uma experiência mais especial
+    </p>
 
   </div>
 
@@ -348,8 +385,10 @@ footer{
       <p>
         Você ama de um jeito raro.
         E eu prometo continuar cuidando desse coração
-        todos os dias da minha vida, 
-        assim como você tem feito comigo, ja disse que a minha missão é retribuir todo o amor q você me faz sentir
+        todos os dias da minha vida,
+        assim como você tem feito comigo,
+        já disse que a minha missão é retribuir
+        todo o amor que você me faz sentir.
       </p>
 
     </div>
@@ -372,14 +411,17 @@ footer{
       Mel, você se tornou meu lugar favorito no mundo.<br><br>
 
       Amar você é fácil.<br>
-      Difícil é encontrar palavras suficientes para explicar o quanto você significa pra mim.<br><br>
+      Difícil é encontrar palavras suficientes para explicar
+      o quanto você significa pra mim.<br><br>
 
       Eu amo sua voz, seu jeito, suas manias, sua presença,
-      sua força, sua delicadeza e até o jeito que você ocupa meus pensamentos o dia inteiro.<br><br>
+      sua força, sua delicadeza e até o jeito que você ocupa
+      meus pensamentos o dia inteiro.<br><br>
 
       Se algum dia você duvidar do quanto é especial,
       volta aqui e lembra:
-      existe alguém nesse mundo que olha pra você como a coisa mais preciosa que a vida poderia oferecer.<br><br>
+      existe alguém nesse mundo que olha pra você
+      como a coisa mais preciosa que a vida poderia oferecer.<br><br>
 
       E esse alguém sou eu. 💜
     </p>
